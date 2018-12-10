@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="5" name="pytest" skips="0" tests="16" time="0.422"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="9" name="test_conda_environment_activated" time="0.002004861831665039"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="12" name="test_yell_hello" time="0.00057220458984375"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="16" name="test_whisper_hey" time="0.0005815029144287109"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="20" name="test_flatiorn_mantra" time="0.0006058216094970703"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="24" name="test_type_string" time="0.0006597042083740234"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="28" name="test_type_list" time="0.0006499290466308594"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="32" name="test_lenght_of_list" time="0.0006601810455322266"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="36" name="test_longest_word_in_list" time="0.002376079559326172"><failure message="AssertionError: longest_word_in_list must be a string
+assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;str&apos;&gt;
+ +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+ +  and   &lt;class &apos;str&apos;&gt; = type(&apos;&apos;)">def test_longest_word_in_list():
+&gt;       assert type(longest_word_in_list) == type(&quot;&quot;), &quot;longest_word_in_list must be a string&quot;
+E       AssertionError: longest_word_in_list must be a string
+E       assert &lt;class &apos;list&apos;&gt; == &lt;class &apos;str&apos;&gt;
+E        +  where &lt;class &apos;list&apos;&gt; = type([&quot;i&apos;m&quot;, &apos;a&apos;, &apos;list&apos;])
+E        +  and   &lt;class &apos;str&apos;&gt; = type(&apos;&apos;)
+
+pytests/test_index.py:38: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="40" name="test_smallest_number" time="0.0006139278411865234"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="44" name="test_sum_of_numbers" time="0.0006186962127685547"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="48" name="test_boolean_compare" time="0.0010263919830322266"><failure message="assert True == False">def test_boolean_compare():
+        assert boolean_compare == False
+&gt;       assert boolean_compare2 == False
+E       assert True == False
+
+pytests/test_index.py:51: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="52" name="test_number_compare" time="0.0006656646728515625"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="57" name="test_string_compare" time="0.0006971359252929688"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="62" name="test_list_compare" time="0.0007665157318115234"><failure message="assert True == False">def test_list_compare():
+        assert list_compare == True
+        assert list_compare2 == True
+&gt;       assert list_compare3 == False
+E       assert True == False
+
+pytests/test_index.py:66: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="69" name="test_logical_compare" time="0.0009276866912841797"><failure message="assert 2 == []">def test_logical_compare():
+&gt;       assert logical_compare == []
+E       assert 2 == []
+
+pytests/test_index.py:71: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="78" name="test_identity_compare" time="0.0008029937744140625"><failure message="assert [] == True">def test_identity_compare():
+        assert identity_compare == False
+&gt;       assert identity_compare2 == True
+E       assert [] == True
+
+pytests/test_index.py:81: AssertionError</failure></testcase></testsuite>
